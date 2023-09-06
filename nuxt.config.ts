@@ -6,5 +6,14 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     '@nuxtjs/supabase'
   ],
-  devtools: { enabled: false }
+  supabase: {
+    // Options
+    redirect:false,
+    // redirectOptions:
+    //  {
+      // login: '/login',
+      // callback: '/confirm',
+      // exclude: [],
+    // }
+  }
 })
